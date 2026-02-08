@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Killian Mahut, développeur web junior passionné par le développement web et la programmation. Découvrez mes projets en HTML, CSS, JavaScript, Python, PHP et SQL.">
+    <meta name="keywords"
+        content="développeur web, portfolio, Killian Mahut, HTML, CSS, JavaScript, Python, PHP, stage développeur, alternance développeur">
+    <meta name="author" content="Killian Mahut">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="indicator"></div>
+                <a href="#home" class="nav-item active" data-label="home">
+                    <div class="icon"><img src="assets/img/profil/home.svg" alt="home"></div>
+                    <span class="label">Accueil</span>
+                </a>
+
+                <a href="#profil" class="nav-item" data-label="profile">
+                    <div class="icon"><img src="assets/img/profil/profil.svg" alt="profil"></div>
+                    <span class="label">Profil</span>
+                </a>
+
+                <a href="#skills" class="nav-item" data-label="skills">
+                    <div class="icon"><img src="assets/img/profil/skills.svg" alt="skills"></div>
+                    <span class="label">Skills</span>
+                </a>
+
+                <a href="#projects" class="nav-item" data-label="projects">
+                    <div class="icon"><img src="assets/img/profil/projects.svg" alt="projects"></div>
+                    <span class="label">Projets</span>
+                </a>
+
+                <a href="#contact" class="nav-item" data-label="contact">
+                    <div class="icon"><img src="assets/img/profil/contact.svg" alt="contact"></div>
+                    <span class="label">Contact</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="profil-picture">
+                <img src="assets/img/profil/profil-pic.jpg" fetchpriority="high" alt="profile-picture">
+            </div>
+            <div class="home-content">
+                <h1>Killian Mahut</h1>
+                <p>Développeur Junior</p>
+            </div>
+        </section>
+
+        <section class="profil" id="profil">
+            <h2>À propos de moi</h2>
+            <p>
+                Je m'appelle Killian Mahut, étudiant en Bachelor Métiers du Numérique à La Manu de Compiègne. Passionné
+                par le développement web et la programmation, j'aime concevoir des sites et applications en utilisant
+                des langages comme HTML, CSS, JavaScript, Python, PHP et SQL. Curieux, rigoureux et motivé, j'aimerais
+                trouver un stage et une alternance afin de mettre mes compétences en pratique, apprendre aux côtés
+                de professionnels et contribuer activement à des projets concrets dans le domaine du numérique.
+            </p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Mes Compétences</h2>
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>Développement Web</h3>
+                    <p>Création de sites en utilisant divers languages.</p>
+                    <div class="skill-tags">
+                        <img src="assets/img/logos/html5.svg" loading="lazy" alt="HTML5" title="HTML5">
+                        <img src="assets/img/logos/css3.svg" loading="lazy" alt="CSS3" title="CSS3">
+                        <img src="assets/img/logos/javascript.svg" loading="lazy" alt="JavaScript" title="JavaScript">
+                        <img src="assets/img/logos/react.svg" loading="lazy" alt="React" title="React">
+                        <img src="assets/img/logos/php.svg" loading="lazy" alt="PHP" title="PHP">
+                        <img src="assets/img/logos/symfony.svg" loading="lazy" alt="Symfony" title="Symfony">
+                        <img src="assets/img/logos/mysql.svg" loading="lazy" alt="SQL" title="SQL">
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Programmation</h3>
+                    <p>Développement d'applications et d'outils en Python et Java.</p>
+                    <div class="skill-tags">
+                        <img src="assets/img/logos/python.svg" loading="lazy" alt="Python" title="Python">
+                        <img src="assets/img/logos/java.svg" loading="lazy" alt="Java" title="Java">
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Outils & Logiciels</h3>
+                    <p>Utilisiation d'outils de création, de versionement et de conception graphique.</p>
+                    <div class="skill-tags">
+                        <img src="assets/img/logos/github.svg" loading="lazy" alt="GitHub" title="GitHub"
+                            class="invert-logo">
+                        <img src="assets/img/logos/wordpress.svg" loading="lazy" alt="WordPress" title="WordPress"
+                            class="invert-logo">
+                        <img src="assets/img/logos/Adobe_Corporate_logo.svg" loading="lazy" alt="Adobe" title="Adobe">
+                        <img src="assets/img/logos/blender.svg" loading="lazy" alt="Blender" title="Blender">
+                        <img src="assets/img/logos/unity.svg" loading="lazy" alt="Unity" title="Unity"
+                            class="invert-logo">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            <h2>Mes projets</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="appli">Applications</button>
+                <button class="filter-btn" data-filter="game">Jeux</button>
+                <button class="filter-btn" data-filter="web">Site web</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <img src="assets/img/aderm/logo.png" loading="lazy" alt="projet 1">
+                    <div class="card-content">
+                        <h3>Projet Ader Maroc</h3>
+                        <p>Création complète du site internet de l'association ADéR.M (Association pour le Développement
+                            Rural au Maroc). Projet réalisé en binôme sur 6 semaines, en étroite collaboration avec les
+                            membres de l'association afin de définir leurs besoins, leur identité et leur communication
+                            digitale.</p>
+                        <button class="button" onclick="openModal('modal-ader')">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="appli">
+                    <img src="assets/img/interface/interfaceGraphique.png" loading="lazy" alt="projet 2"
+                        class="project-gif">
+                    <div class="card-content">
+                        <h3>Interface Graphique</h3>
+                        <p>Développement d'une application desktop en Python pour l'entreprise Leader Light Event.
+                            Spécialisée dans les prestations événementielles pour entreprise, collectivité locale, …</p>
+                        <button class="button" onclick="openModal('modal-interface')">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game">
+                    <img src="assets/img/puissance4/puissance4-fixe.png"
+                        data-static="assets/img/puissance4/puissance4-fixe.png"
+                        data-hover="assets/img/puissance4/puissance4.gif" class="gif-handler" loading="lazy"
+                        alt="Jeu Puissance 4">
+                    <div class="card-content">
+                        <h3>Puissance 4</h3>
+                        <p>Réalisé durant mon année de Terminale, ce projet consiste en une adaptation numérique du célèbre
+                            jeu Puissance 4 L'objectif
+                        </p>
+                        <button class="button" onclick="openModal('modal-puissance4')">Voir plus</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <img src="assets/img/MyMooviz/logo.png" alt="projet 4 ">
+                    <div class="card-content">
+                        <h3>My Mooviz</h3>
+                        <p>My Mooviz est une plateforme web immersive dédiée aux passionnés de cinéma. L'objectif était de créer un outil complet</p>
+                        <button class="button" onclick="openModal('modal-mymooviz')">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Modal pour le projet Ader Maroc -->
+        <div id="modal-ader" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-ader')">&times;</span>
+                <h2>Projet Ader Maroc</h2>
+
+                <!-- Carousel d'images -->
+                <div class="modal-carousel">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="assets/img/aderm/aderm1.png" alt="ADER Maroc - Page d'accueil">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/aderm/aderm2.png" alt="ADER Maroc - Page Partenaires">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/aderm/aderm3.png" alt="ADER Maroc - Page des publications">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/aderm/aderm4.png" alt="ADER Maroc - Charte Graphique">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boutons de navigation dans le carousel -->
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Image précédente"></button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Image suivante"></button>
+
+                    <!-- Points de navigation dans le carousel -->
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="modal-description">
+                    <h3>Contexte du projet</h3>
+                    <p>
+                        Création complète du site internet de l'association ADéR.M (Association pour le Développement
+                        Rural au Maroc). Projet réalisé en binôme sur 6 semaines, en étroite collaboration avec les
+                        membres de l'association afin de définir leurs besoins, leur identité et leur communication
+                        digitale.
+                    </p>
+
+                    <h3>Objectifs</h3>
+                    <ul>
+                        <li>Donner de la visibilité à l'association</li>
+                        <li>Présenter clairement ses actions et ses missions</li>
+                        <li>Faciliter la collecte de dons via HelloAsso</li>
+                        <li>Concevoir une identité web moderne, accessible et cohérente</li>
+                    </ul>
+
+                    <h3>Mon rôle</h3>
+                    <ul>
+                        <li>Conception UX : définition des personas, wireframes et zoning</li>
+                        <li>Création des maquettes UI sur Figma</li>
+                        <li>Développement complet du site sous WordPress avec Elementor</li>
+                        <li>Intégration du module de dons HelloAsso</li>
+                        <li>Mise en ligne et configuration de l’hébergement (o2Switch)</li>
+                    </ul>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="modal-tags">
+                        <span>WordPress</span>
+                        <span>Elementor</span>
+                        <span>Figma</span>
+                        <span>HelloAsso</span>
+                        <span>o2Switch</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <h3>Fonctionnalités principales</h3>
+                    <ul>
+                        <li>Design moderne et responsive adapté à tous les supports</li>
+                        <li>Organisation claire des rubriques et navigation intuitive</li>
+                        <li>Intégration des dons en ligne</li>
+                        <li>Page de présentation de l'association et de ses actions</li>
+                        <li>Galerie de projets et d'événements</li>
+                    </ul>
+                </div>
+
+                <div class="modal-links">
+                    <a href="https://association-adermaroc.org/" target="_blank" class="project-link">🌐 Visiter le
+                        site</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal du Projet Interface Graphique -->
+        <div id="modal-interface" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-interface')">&times;</span>
+                <h2>Interface Graphique</h2>
+
+                <div class="modal-carousel">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="assets/img/interface/interfaceGraphique.png"
+                                    alt="Interface Graphique - Vue 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/interface/interfaceGraphique2.png"
+                                    alt="Interface Graphique - Vue 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/interface/interfaceGraphique3.png"
+                                    alt="Interface Graphique - Vue 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Image précédente"></button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Image suivante"></button>
+
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="modal-description">
+                    <h3>Contexte du projet</h3>
+                    <p>
+                        Développement d'une application desktop en Python pour l'entreprise Leader Light Event.
+                        Spécialisée dans les prestations événementielles pour entreprise, collectivité locale, …
+                        Leur demande était: avoir une solution simple et intuitive pour répondre au problème suivant:
+                        pvr afficher les scores des participants le temps d'une prestation pour créer de la cohésion.
+                        Ces scores sont obtenus lors d'un affrontement entre participants sur un mur interactif loué par
+                        l'entreprise.
+                        L'outil sert à récupérer, gérer et afficher les scores provenant du mur interactif. Le logiciel
+                        est désormais utilisé lors de divers événements.
+                    </p>
+
+                    <h3>Objectifs</h3>
+                    <ul>
+                        <li>Offrir une interface simple et personnalisable pour afficher les scores en direct</li>
+                        <li>Proposer une mise en scène visuelle adaptée aux besoins des événements</li>
+                        <li>Permettre l'import et l'export des données pour faciliter leur gestion et leur réutilisation
+                        </li>
+                    </ul>
+
+                    <h3>Fonctionnement de l'application</h3>
+                    <p>L'application comporte deux fenêtres :</p>
+                    <ul>
+                        <li><strong>Fenêtre de personnalisation</strong>
+                            <p>Permet de modifier les éléments visuels : couleurs, polices, logo, images, mise en page…
+                                afin d'adapter l'affichage à chaque événement.</p>
+                        </li>
+
+                        <li><strong>Fenêtre d'affichage</strong>
+                            <p>Présente le rendu final destiné au mur interactif, avec :</p>
+                            <ul>
+                                <li>Un podium des 3 meilleurs joueurs</li>
+                                <li>Un tableau statique</li>
+                                <li>Un tableau défilant selon le nombre de participants</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>L'application peut importer des données existantes (fichier de scores) et exporter les résultats
+                        au format Excel pour archivage ou partage avec les clients.</p>
+
+                    <h3>Mon rôle</h3>
+                    <ul>
+                        <li>Conception complète de l'interface graphique</li>
+                        <li>Développement en Python/Tkinter</li>
+                        <li>Gestion de la récupération, mise à jour et affichage des scores</li>
+                        <li>Intégration de l'import/export des données</li>
+                        <li>Ajout de la personnalisation visuelle pour les besoins événementiels</li>
+                        <li>Création d'un exécutable (.exe) pour une utilisation fluide</li>
+                    </ul>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="modal-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                    </div>
+
+                    <h3>Fonctionnalités principales</h3>
+                    <ul>
+                        <li>Personnalisation visuelle complète (couleurs, polices, logos, images)</li>
+                        <li>Import et export des données en Excel</li>
+                        <li>Affichage du podium</li>
+                        <li>Tableaux statique et défilant</li>
+                        <li>Mise à jour des scores en temps réel</li>
+                        <li>Application finale en .exe pour une utilisation rapide et pratique</li>
+                    </ul>
+                </div>
+
+                <div class="modal-links">
+                    <a href="https://github.com/votre-username/interface-graphique" target="_blank"
+                        class="project-link">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub"
+                            style="width: 20px; height: 20px; filter: invert(1); vertical-align: middle; margin-right: 8px;">
+                        Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour le Puissance 4 -->
+        <div id="modal-puissance4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-puissance4')">&times;</span>
+                <h2>Puissance 4</h2>
+
+                <div class="modal-carousel">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="assets/img/puissance4/puissance4_1.png" alt="Puissance 4 - Menu">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/puissance4/puissance4_2.png" alt="Puissance 4 - Jeu">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/puissance4/puissance4_3.png" alt="Puissance 4 - Victoire Rouge">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/puissance4/puissance4_4.png" alt="Puissance 4 - Victoire Jaune">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/puissance4/puissance4_5.png" alt="Puissance 4 - Match nul">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Image précédente"></button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Image suivante"></button>
+
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="modal-description">
+                    <h3>Contexte du projet</h3>
+                    <p>
+                        Réalisé durant mon année de Terminale, ce projet consiste en une adaptation numérique du célèbre
+                        jeu
+                        <strong>Puissance 4</strong>. L'objectif était de transposer les règles du jeu de société en une
+                        logique
+                        algorithmique robuste, tout en développant une interface utilisateur interactive avec
+                        <strong>Pygame</strong>.
+                    </p>
+
+                    <h3>Caractéristiques du projet</h3>
+                    <ul>
+                        <li><strong>Mode 2 joueurs local :</strong> Gestion fluide de l'alternance des tours entre les
+                            jetons rouges et jaunes.</li>
+                        <li><strong>Interface UX/UI :</strong> Menu principal interactif, prévisualisation du jeton au
+                            survol des colonnes et retour visuel en temps réel.</li>
+                        <li><strong>Logique de jeu complète :</strong> Système de chute des jetons dans la case la plus
+                            basse disponible et gestion automatique des matchs nuls.</li>
+                    </ul>
+
+                    <h3>Focus Technique</h3>
+                    <p>
+                        Le cœur du projet repose sur la manipulation d'une <strong>matrice de données (6x7)</strong>
+                        représentant la grille.
+                        Le défi principal a été l'implémentation de la détection de victoire :
+                    </p>
+
+
+
+                    <ul>
+                        <li><strong>Algorithme récursif :</strong> Pour chaque jeton posé, le programme explore les 8
+                            directions (horizontale, verticale, diagonales) pour compter les alignements.</li>
+                        <li><strong>Optimisation :</strong> L'utilisation de vecteurs de direction permet de valider une
+                            victoire en un minimum de lignes de code, garantissant une réponse instantanée.</li>
+                    </ul>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="modal-tags">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                        <span>Algorithmique</span>
+                        <span>Gestion d'États</span>
+                    </div>
+                </div>
+
+                <div class="modal-links">
+                    <a href="https://github.com/votre-username/puissance4" target="_blank" class="project-link">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub"
+                            style="width: 20px; height: 20px; filter: invert(1); vertical-align: middle; margin-right: 8px;">
+                        Jouer au jeu
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour le projet My Mooviz -->
+        <div id="modal-mymooviz" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-mymooviz')">&times;</span>
+                <h2>Projet My Mooviz</h2>
+
+                <!-- Carousel d'images -->
+                <div class="modal-carousel">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz1.png" alt="My Mooviz - Page d'accueil">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz2.png" alt="My Mooviz - Page de détails de films">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz3.png" alt="My Mooviz - Page Wishlist">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz4.png" alt="My Mooviz - Page des films triés">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz5.png" alt="My Mooviz - Page de recherche">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/MyMooviz/MyMooviz6.png" alt="My Mooviz - Page d'aide">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boutons de navigation dans le carousel -->
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Image précédente"></button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Image suivante"></button>
+
+                    <!-- Points de navigation dans le carousel -->
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <div class="modal-description">
+                    <h3>Contexte du projet</h3>
+                    <p>
+                        <strong>My Mooviz</strong> est une plateforme web immersive dédiée aux passionnés de cinéma.
+                        L'objectif était de créer un outil complet permettant non seulement de consulter les dernières
+                        sorties,
+                        mais aussi d'explorer le cinéma mondial de manière géographique grâce à une interface
+                        cartographique innovante.
+                    </p>
+
+                    <h3>Caractéristiques du projet</h3>
+                    <ul>
+                        <li><strong>Exploration Géographique :</strong> Intégration d'une carte interactive (Leaflet)
+                            permettant de filtrer les films par pays d'origine.</li>
+                        <li><strong>Contenu Dynamique :</strong> Consommation de l'API TMDB pour afficher en temps réel
+                            les actualités, les sorties à venir et les bandes-annonces.</li>
+                        <li><strong>Gestion de Wishlist :</strong> Système complet de sauvegarde locale permettant aux
+                            utilisateurs de créer leur propre liste de films à voir sans compte utilisateur.</li>
+                        <li><strong>Expérience Fluide :</strong> Carrousels interactifs, recherche instantanée et design
+                            "Mobile First" avec une navigation optimisée pour smartphone.</li>
+                    </ul>
+
+                    <h3>Focus Technique</h3>
+                    <p>
+                        Le projet repose sur une architecture JavaScript modulaire et une gestion rigoureuse des données
+                        asynchrones :
+                    </p>
+
+
+
+                    <ul>
+                        <li><strong>Interactions API :</strong> Utilisation de <code>fetch</code> et
+                            <code>async/await</code> pour récupérer et traiter des données complexes (synopsis, notes,
+                            vidéos YouTube).
+                        </li>
+                        <li><strong>Persistance des données :</strong> Exploitation du <code>localStorage</code> pour
+                            assurer la persistance de la liste de l'utilisateur entre les sessions.</li>
+                        <li><strong>Performance :</strong> Utilisation de <code>DocumentFragment</code> pour optimiser
+                            le rendu du DOM lors de l'affichage de listes massives de films.</li>
+                        <li><strong>Interface Responsive :</strong> Design moderne utilisant Flexbox, Grid et les
+                            variables CSS pour une maintenance simplifiée.</li>
+                    </ul>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="modal-tags">
+                        <span>JavaScript (ES6+)</span>
+                        <span>API REST (TMDB)</span>
+                        <span>Leaflet.js</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>Local Storage</span>
+                    </div>
+                </div>
+
+                <div class="modal-links">
+                    <a href="https://my-mooviz-project.netlify.app/" target="_blank" class="project-link">🌐 Visiter le
+                        site</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="contact" id="contact">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour toute opportunité de stage, d'alternance ou de collaboration.</p>
+
+            <div class="contact-wrapper">
+
+                <!-- COlonne de gauche pour mes réseaux et contact -->
+                <div class="contact-left">
+
+                    <!-- Info Contact -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <span><a href="mailto:killian.mahut@sfr.fr">killian.mahut@sfr.fr</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📱</span>
+                            <span><a href="tel:0782542922">07 82 54 29 22</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <span>Compiègne, France</span>
+                        </div>
+                    </div>
+
+                    <!-- Les réseaux -->
+                    <div class="reseaux">
+                        <a href="https://www.linkedin.com/in/killian-mahut-b85105341/" target="_blank"
+                            class="icon-container linkedin">
+                            <div class="icon-reseaux">
+                                <img src="assets/img/logos/linkedin.png" alt="LinkedIn">
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Killian1806" target="_blank" class="icon-container github">
+                            <div class="icon-reseaux">
+                                <img src="assets/img/logos/github.png" alt="GitHub">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Colonne de droite pour le formulaire de contact -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="d26c93ec-7242-4689-a332-f956f4e69bc3">
+                    <input type="hidden" name="redirect" value="index.html">
+
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Votre message..."></textarea>
+                    </div>
+
+                    <div class="rgpd-container">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">
+                            J'accepte que mes données soient traitées selon la
+                            <a href="#" class="open-legal-from-form">politique de confidentialité</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer le message</span>
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Bouton CV flottant -->
+    <button class="cv-float-btn" id="cvFloatBtn" aria-label="Mon CV">📄</button>
+
+    <!-- Pop-up CV -->
+    <div class="cv-popup" id="cvPopup">
+        <h3>Mon CV</h3>
+        <p>Découvrez mon parcours, mes compétences et mes expériences en détail.</p>
+        <button class="cv-popup-btn" onclick="window.open('assets/CV/Mahut_Killian_CV.pdf', '_blank')">
+            📥 Voir mon CV
+        </button>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <p class="footer-name">Killian Mahut</p>
+
+
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#profil">Profil</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-reseaux">
+                    <a href="https://www.linkedin.com/in/killian-mahut-b85105341/" target="_blank"
+                        class="social-icon linkedin" title="LinkedIn">
+                        <img src="assets/img/logos/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://github.com/Killian1806" target="_blank" class="social-icon github" title="GitHub">
+                        <img src="assets/img/logos/github.png" alt="github">
+                    </a>
+                    <a href="mailto:killian.mahut@sfr.fr" class="social-icon email" title="Email">
+                        <span>@</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Conçu et développé par Killian Mahut. Tous droits réservés.</p>
+                <p class="legal-link">
+                    <a href="#" id="open-legal">Mentions Légales & Confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="legal-modal" class="modal-legal">
+        <div class="modal-legal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Mentions Légales & Confidentialité</h2>
+            <div class="modal-scroll-area">
+                <h3>Éditeur du site</h3>
+                <p>Ce site est le portfolio de <strong>Killian Mahut</strong>.</p>
+
+                <h3>Protection des données</h3>
+                <p>Les données envoyées via le formulaire (nom, email, message) sont transmises via le service tiers <strong>Web3Forms</strong> pour permettre leur acheminement vers ma boîte mail personnelle.</p>
+                <ul>
+                    <li><strong>Finalité :</strong> Répondre à vos demandes de contact.</li>
+                    <li><strong>Traitement :</strong> Web3Forms agit comme intermédiaire technique et ne conserve pas vos données de manière permanente sur ses serveurs après l'envoi du mail.</li>
+                    <li><strong>Destinataire :</strong> Killian Mahut uniquement.</li>
+                    <li><strong>Durée de conservation :</strong> Les données sont conservées le temps de l'échange.</li>
+                </ul>
+
+                <h3>Hébergement</h3>
+                <p>Ce site est hébergé par Github Inc., dont le siège social est situé au 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA.</p><br>
+
+                <p>Conformément au RGPD, vous disposez d'un droit d'accès et de suppression de vos données en me
+                    contactant directement par email.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/bouton.js"></script>
+    <script src="assets/js/projets.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/cv.js"></script>
+    <script src="assets/js/legal.js"></script>
+
+</body>
+
+</html>
