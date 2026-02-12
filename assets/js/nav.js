@@ -3,28 +3,24 @@ const navItems = document.querySelectorAll('.nav-item');
 const indicator = document.querySelector('.indicator');
 const sections = document.querySelectorAll('section');
 
-/**
- * Calcule la position exacte de l'item pour l'indicateur
- */
+//  Calcule la position exacte de l'item pour l'indicateur
+
 function getIndicatorPosition(item) {
     const navbar = document.querySelector('.navbar');
     const navbarRect = navbar.getBoundingClientRect();
     const itemRect = item.getBoundingClientRect();
     
-    const isMobile = window.innerWidth <= 768; // CORRIGÉ: 768px au lieu de 968px
+    const isMobile = window.innerWidth <= 768; 
     
     if (isMobile) {
-        // Mode horizontal (mobile)
         return itemRect.left - navbarRect.left;
     } else {
-        // Mode vertical (desktop)
         return itemRect.top - navbarRect.top;
     }
 }
 
-/**
- * Active un nav-item et déplace l'indicateur
- */
+//  Active un nav-item et déplace l'indicateur
+
 function activateNavItem(item) {
     if (!item) return;
 
@@ -36,7 +32,7 @@ function activateNavItem(item) {
     
     // Déplacer l'indicateur
     const position = getIndicatorPosition(item);
-    const isMobile = window.innerWidth <= 768; // CORRIGÉ: 768px au lieu de 968px
+    const isMobile = window.innerWidth <= 768;
     
     if (isMobile) {
         indicator.style.top = ''; // Reset top pour le mobile
@@ -47,10 +43,9 @@ function activateNavItem(item) {
     }
 }
 
-/**
- * Configuration de l'Intersection Observer (ScrollSpy)
- * Le rootMargin à -50% crée une ligne de détection virtuelle au centre de l'écran.
- */
+
+//  Configuration de l'Intersection Observer (ScrollSpy)
+
 const observerOptions = {
     rootMargin: '-50% 0px -50% 0px',
     threshold: 0
@@ -72,9 +67,9 @@ const observer = new IntersectionObserver((entries) => {
 // On attache l'observeur à chaque section
 sections.forEach(section => observer.observe(section));
 
-/**
- * Event listener pour les clics sur la navigation (Smooth Scroll)
- */
+
+//  Event listener pour les clics sur la navigation (Smooth Scroll)
+
 navItems.forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault();
@@ -83,8 +78,6 @@ navItems.forEach(item => {
         const targetSection = document.querySelector(targetId);
         
         if (targetSection) {
-            // Désactiver temporairement l'observer pour éviter les sauts visuels pendant le scroll forcé
-            // (Optionnel, mais rend le clic plus propre)
             
             targetSection.scrollIntoView({
                 behavior: 'smooth',
@@ -94,9 +87,9 @@ navItems.forEach(item => {
     });
 });
 
-/**
- * Gestion du redimensionnement
- */
+
+//   Gestion du redimensionnement
+
 window.addEventListener('resize', () => {
     const activeItem = document.querySelector('.nav-item.active');
     if (activeItem) {
@@ -104,12 +97,9 @@ window.addEventListener('resize', () => {
     }
 });
 
-/**
- * Initialisation au chargement
- */
+
 window.addEventListener('load', () => {
     // L'Intersection Observer fera le travail automatiquement au chargement, 
-    // mais on force un check pour être sûr.
     const activeItem = document.querySelector('.nav-item.active') || document.querySelector('.nav-item');
     if (activeItem) {
         activateNavItem(activeItem);
